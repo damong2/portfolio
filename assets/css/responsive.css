@@ -1,0 +1,681 @@
+/* 미디어쿼리 - 반응형 */
+
+/* 1001px ~ 1259px: design modal slide height sync */
+@media (min-width: 1001px) and (max-width: 1259px) {
+  #modal-design .design-slider {
+    --design-work-height: min(520px, calc(100dvh - 330px));
+  }
+
+  #modal-design .design-scroll-frame,
+  #modal-design .design-banner-works {
+    height: var(--design-work-height);
+    max-height: var(--design-work-height);
+  }
+
+  #modal-design .design-banner-works {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  #modal-design .design-banner-works figure {
+    height: 100%;
+    margin: 0;
+  }
+
+  #modal-design .design-banner-works figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-links {
+    gap: 18px;
+  }
+
+  .hero {
+    min-height: 100svh;
+    padding-top: 120px;
+  }
+
+  .hero-inner,
+  .section-grid,
+  .about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-inner {
+    min-height: calc(100svh - 120px);
+    align-items: center;
+  }
+
+  .hero-copy {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .hero-3d {
+    height: 420px;
+    min-height: 360px;
+  }
+
+  .scroll-hint {
+    bottom: -0rem;
+  }
+
+  .section {
+    padding-left: clamp(84px, 12vw, 132px);
+    padding-right: clamp(28px, 7vw, 120px);
+  }
+
+  /* 1100 이하 공통: 텍스트 + 미리보기 중앙 */
+  .section-grid {
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: clamp(34px, 5vw, 54px);
+  }
+
+  .section-grid > div:first-child {
+    justify-self: center;
+    width: min(520px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-num,
+  .section-title,
+  .tool-line,
+  .section-desc {
+    text-align: center;
+  }
+
+  .tool-line {
+    width: 100%;
+  }
+
+  .section-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .view-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Artwork */
+  .art-grid {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .art-grid .frame:nth-child(2) {
+    transform: none;
+  }
+
+  /* Motion: 3개씩 2줄, 카드 작게 */
+  .motion .section-grid {
+    gap: 42px;
+  }
+
+  .motion-strip {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .motion-card {
+    border-radius: 14px;
+  }
+
+  .motion-thumb {
+    aspect-ratio: 16 / 9;
+  }
+
+  .motion-meta {
+    padding: 10px 12px 12px;
+  }
+
+  .motion-meta strong {
+    font-size: 0.78rem;
+  }
+
+  .motion-meta span {
+    font-size: 0.56rem;
+    letter-spacing: 0.14em;
+  }
+
+  .play {
+    width: 42px;
+    height: 42px;
+  }
+
+  .play::before {
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-left-width: 9px;
+  }
+
+  /* Design */
+  .design-preview {
+    width: min(760px, 100%);
+    margin: 0 auto;
+  }
+
+  /* Web / NFNL: Motion처럼 중앙 정렬 */
+  .nfnl {
+    min-height: auto;
+    padding-top: 14vh;
+    padding-bottom: 10vh;
+  }
+
+  .nfnl .section-grid {
+    gap: 28px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .nfnl .section-grid > div:first-child {
+    justify-self: center;
+    width: min(520px, 100%);
+    align-items: center;
+    text-align: center;
+  }
+
+  .nfnl .section-num,
+  .nfnl .section-title,
+  .nfnl .tool-line,
+  .nfnl .section-desc {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nfnl .section-desc {
+    max-width: 430px;
+  }
+
+  .nfnl-showcase {
+    min-height: 0;
+    width: 100%;
+  }
+
+  .nfnl-mockup {
+    justify-self: center;
+    width: min(760px, 92vw);
+    margin-left: 0;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nfnl-mockup img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  #modal-design {
+    padding: 24px 20px;
+  }
+
+  #modal-design .design-modal-box {
+    width: calc(100vw - 40px);
+    max-height: calc(100dvh - 48px);
+    overflow-y: auto;
+    padding: 68px 26px 32px;
+  }
+
+  #modal-design .design-modal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  #modal-design .design-modal-info {
+    position: static;
+    flex: none;
+  }
+
+  #modal-design .design-slider-head {
+    width: 100%;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #modal-design .design-slider-controls {
+    margin-left: auto;
+  }
+
+  #modal-design .design-scroll-frame {
+    max-height: 430px;
+  }
+}
+
+@media (max-width: 900px) {
+  .motion-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .motion-info {
+    position: static;
+    min-height: auto;
+  }
+
+  .motion-current-text {
+    min-height: auto;
+  }
+
+  .motion-thumb-btn {
+    flex-basis: 112px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lb-overlay {
+    padding: 70px 20px;
+  }
+
+  .lb-box {
+    padding: 34px 22px;
+    border-radius: 24px;
+  }
+
+  .resume-grid,
+  .lb-images.two,
+  .motion-modal {
+    grid-template-columns: 1fr;
+  }
+
+  .lb-close {
+    top: 18px;
+    right: 20px;
+  }
+
+  .modal-links {
+    flex-direction: column;
+  }
+
+  .nav {
+    padding: 22px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .depth-meter {
+    left: 14px;
+    width: 62px;
+  }
+
+  .depth-point strong {
+    font-size: 0.82rem;
+  }
+
+  .depth-point > div > span {
+    font-size: 0.42rem;
+  }
+
+  .section,
+  .hero,
+  .footer {
+    padding-left: 74px;
+    padding-right: 22px;
+  }
+
+  .section-grid,
+  .about-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .section-grid > div:first-child {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-num,
+  .section-title,
+  .tool-line,
+  .section-desc {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .view-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-inner {
+    padding-top: 76px;
+  }
+
+  .hero-title {
+    font-size: clamp(3.6rem, 18vw, 6rem);
+  }
+
+  .hero-3d {
+    min-height: 280px;
+    height: 340px;
+  }
+
+  .cube-wrap {
+    width: 220px;
+    height: 220px;
+  }
+
+  .art-grid {
+    width: min(420px, 100%);
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+  .art-grid .frame:nth-child(2) {
+    transform: none;
+  }
+
+  .motion-strip {
+    width: min(520px, 100%);
+    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .motion-card {
+    border-radius: 14px;
+  }
+
+  .motion-meta {
+    padding: 10px 11px 12px;
+  }
+
+  .motion-meta strong {
+    font-size: 0.72rem;
+  }
+
+  .motion-meta span {
+    font-size: 0.52rem;
+    letter-spacing: 0.12em;
+  }
+
+  .play {
+    width: 40px;
+    height: 40px;
+  }
+
+  .play::before {
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-left-width: 9px;
+  }
+
+  .design-preview {
+    width: min(520px, 100%);
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    height: auto;
+    max-height: none;
+    gap: 14px;
+  }
+
+  .design-main-card {
+    width: 100%;
+    height: 260px;
+    min-height: 0;
+    max-height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  .design-main-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .design-banner-stack {
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    height: auto;
+  }
+
+  .design-banner-card {
+    height: 160px;
+    min-height: 0;
+    aspect-ratio: auto;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .design-banner-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #modal-design .design-scroll-frame,
+  #modal-design .design-banner-works {
+    height: 360px;
+    max-height: 360px;
+  }
+
+  #modal-design .design-banner-works {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    align-items: stretch;
+  }
+
+  #modal-design .design-banner-works figure {
+    height: 100%;
+    margin: 0;
+  }
+
+  #modal-design .design-banner-works figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nfnl {
+    min-height: auto;
+    padding-top: 12vh;
+    padding-bottom: 8vh;
+  }
+
+  .nfnl .section-grid {
+    gap: 18px;
+  }
+
+  .nfnl .section-grid > div:first-child {
+    width: 100%;
+    max-width: 460px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nfnl .section-num,
+  .nfnl .section-title,
+  .nfnl .tool-line,
+  .nfnl .section-desc {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nfnl .section-desc {
+    max-width: 390px;
+  }
+
+  .nfnl-showcase {
+    min-height: 0;
+    width: 100%;
+  }
+
+  .nfnl-mockup {
+    width: min(520px, 96vw);
+    margin-left: 0;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nfnl-mockup img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    padding-left: 96px;
+    padding-right: 28px;
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+
+  .footer-grid {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+
+  .top-btn {
+    right: 22px;
+    bottom: 22px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .motion-thumb-btn {
+    flex-basis: 104px;
+  }
+
+  .motion-thumb-btn span {
+    font-size: 0.64rem;
+  }
+}
+
+@media (max-width: 420px) {
+  /* 수심계 더 얇게 */
+  .depth-meter {
+    left: 8px;
+    width: 46px;
+  }
+
+  .depth-meter::before {
+    left: 5px;
+  }
+
+  .depth-point {
+    min-width: 46px;
+    padding-left: 18px;
+  }
+
+  .depth-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .depth-point > div > span {
+    font-size: 0.36rem;
+    letter-spacing: 0.12em;
+  }
+
+  .depth-point strong {
+    font-size: 0.72rem;
+  }
+
+  /* 실제 콘텐츠 폭 확보 */
+  .section,
+  .hero,
+  .footer {
+    padding-left: 56px;
+    padding-right: 16px;
+  }
+
+  .section-grid {
+    gap: 28px;
+  }
+
+  .section-title {
+    font-size: clamp(2.4rem, 14vw, 3.6rem);
+  }
+
+  .section-desc {
+    font-size: 0.82rem;
+    line-height: 1.75;
+  }
+
+  .tool-line {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* Motion 카드 360에서는 1열이 더 안정적 */
+  .motion-strip {
+    grid-template-columns: 1fr;
+    width: min(300px, 100%);
+  }
+
+  /* Design 미리보기 */
+  .design-preview {
+    width: min(300px, 100%);
+    padding: 14px;
+  }
+
+  .design-main-card {
+    height: 220px;
+    max-height: 220px;
+  }
+
+  .design-banner-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .design-banner-card {
+    height: 130px;
+  }
+
+  /* Web 목업 */
+  .nfnl-mockup {
+    width: min(320px, 100%);
+  }
+
+  /* 탑버튼 우측 하단 유지 */
+  .top-btn {
+    right: 16px;
+    bottom: 16px;
+  }
+}

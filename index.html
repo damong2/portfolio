@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEE DA GYEOM — Portfolio</title>
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/port.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script> -->
+  </head>
+
+  <body>
+    <div class="ocean-bg"></div>
+    <canvas id="sun-canvas"></canvas>
+    <canvas id="dust-canvas"></canvas>
+
+    <nav class="nav">
+      <a href="#top" class="nav-logo" aria-label="LEE DA GYEOM Home">LDG</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#artwork">Artwork</a></li>
+        <li><a href="#motion">Motion</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#nfnl">Web</a></li>
+        <li><a class="contact-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 수심 0m ~ -800m -->
+    <nav class="depth-meter" aria-label="Depth section navigation">
+      <a href="#top" class="depth-point d0"
+        ><span class="depth-dot" aria-hidden="true">
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+        </span>
+        <div><strong>0m</strong><span>SURFACE</span></div>
+      </a>
+
+      <a href="#about" class="depth-point d20"
+        ><span class="depth-dot" aria-hidden="true">
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+        </span>
+        <div><strong>-20m</strong><span>ABOUT</span></div>
+      </a>
+
+      <a href="#artwork" class="depth-point d80"
+        ><span class="depth-dot" aria-hidden="true">
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+        </span>
+        <div><strong>-80m</strong><span>ARTWORK</span></div>
+      </a>
+
+      <a href="#motion" class="depth-point d180"
+        ><span class="depth-dot" aria-hidden="true">
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+        </span>
+        <div><strong>-180m</strong><span>MOTION</span></div>
+      </a>
+
+      <a href="#design" class="depth-point d320"
+        ><span class="depth-dot" aria-hidden="true">
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+        </span>
+        <div><strong>-320m</strong><span>DESIGN</span></div>
+      </a>
+
+      <a href="#nfnl" class="depth-point d800 abyss"
+        ><span class="depth-dot" aria-hidden="true">
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+          <span class="depth-ring"></span>
+        </span>
+        <div><strong>-800m</strong><span>WEB</span></div>
+      </a>
+    </nav>
+
+    <main id="top">
+      <!-- HERO / MAIN 3D 메인 -->
+      <section class="section hero">
+        <div class="section-inner hero-inner">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">UX / UI Designer Portfolio</p>
+            <h1 class="hero-title bok"><em>LEE</em><br />DA GYEOM</h1>
+            <p class="hero-desc">
+              UI/UX Design &#183; Web Publishing &#183; Motion Design
+            </p>
+          </div>
+
+          <div class="hero-3d" aria-label="3D interactive main visual">
+            <div class="fish-line"></div>
+            <div class="cube-wrap">
+              <div class="cube">
+                <div class="cube-face front"></div>
+                <div class="cube-face back"></div>
+                <div class="cube-face right"></div>
+                <div class="cube-face left"></div>
+                <div class="cube-face top"></div>
+                <div class="cube-face bottom"></div>
+              </div>
+              <div class="cube-core"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- scroll 스크롤 이펙트 -->
+        <a
+          class="scroll-hint scroll-sonar"
+          href="#about"
+          aria-label="Scroll to about section"
+        >
+          <div class="sonar-current">
+            <span class="bubble bubble1"></span>
+            <span class="bubble bubble2"></span>
+            <span class="bubble bubble3"></span>
+          </div>
+          <div class="sonar-ripple">
+            <span></span>
+            <span></span>
+            <span></span>
+            <i></i>
+          </div>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </section>
+
+      <!-- ABOUT 어바웃 -->
+      <section class="section about" id="about">
+        <div class="section-inner about-card reveal">
+          <div>
+            <p class="kicker">About Me</p>
+            <h2>I design experiences</h2>
+            <h3>that move.</h3>
+            <p>
+              사용자의 흐름을 읽고, 움직임으로 기억되는 화면을 만듭니다. 기획과
+              디자인, 퍼블리싱과 모션을 하나의 경험으로 연결하는 이다겸입니다.
+            </p>
+            <a href="#modal-about" class="view-btn">More About Me</a>
+          </div>
+
+          <!-- diver 다이빙 영상 -->
+          <div class="diver-area">
+            <video class="diver-video" autoplay muted loop playsinline>
+              <source src="assets/media/about_me2.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARTWORK 아트웍 -->
+      <section class="section artwork" id="artwork">
+        <div class="section-inner section-grid reveal">
+          <div>
+            <span class="section-num">01</span>
+            <h2 class="section-title">Artwork</h2>
+            <p class="tool-line">Illustration &#183; Vector Artwork</p>
+            <p class="section-desc">
+              강렬한 분위기와 디테일을 가진 벡터 기반 아트워크입니다. 완성
+              이미지와 라인 작업을 함께 보여줍니다.
+            </p>
+            <a href="#modal-artwork" class="view-btn">View Project</a>
+          </div>
+
+          <div class="art-grid">
+            <figure class="frame glass">
+              <img
+                src="assets/images/denji-artwork-color.png"
+                alt="Denji colored artwork"
+              />
+              <figcaption class="caption">Colored Artwork</figcaption>
+            </figure>
+            <figure class="frame glass">
+              <img
+                src="assets/images/denji-artwork-line.png"
+                alt="Denji line artwork"
+              />
+              <figcaption class="caption">Line Artwork</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOTION WORKS 영상 작업물 -->
+      <section class="section motion" id="motion">
+        <div class="section-inner section-grid reveal">
+          <div>
+            <span class="section-num">02</span>
+            <h2 class="section-title">Motion</h2>
+            <p class="tool-line">
+              Premiere Pro &#183; After Effects &#183; Editing
+            </p>
+            <p class="section-desc">
+              영상의 흐름과 감정을 설계하여 브랜드의 이야기를 시각적으로
+              전달합니다.
+            </p>
+            <a href="#modal-motion" class="view-btn">View Project</a>
+          </div>
+
+          <div class="motion-strip glass">
+            <!-- NFNL 인트로 -->
+            <article class="motion-card">
+              <div class="motion-thumb">
+                <video
+                  src="assets/media/nfnl_video.mp4"
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span class="play"></span>
+              </div>
+              <div class="motion-meta">
+                <strong>NFNL intro</strong>
+                <span>Brand Ad</span>
+              </div>
+            </article>
+
+            <!-- 다이소 본셉 광고 -->
+            <article class="motion-card">
+              <div class="motion-thumb">
+                <video
+                  src="assets/media/daiso.mp4"
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span class="play"></span>
+              </div>
+              <div class="motion-meta">
+                <strong>본셉 광고</strong>
+                <span>Brand Ad</span>
+              </div>
+            </article>
+
+            <!-- 키네틱 타이포 - 악몽 -->
+            <article class="motion-card">
+              <div class="motion-thumb">
+                <video
+                  src="assets/media/kineticTypography_nightmare.mp4"
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span class="play"></span>
+              </div>
+              <div class="motion-meta">
+                <strong>애쉬 아일랜드 - 악몽</strong>
+                <span>Kinetic Typography</span>
+              </div>
+            </article>
+
+            <!-- 키네틱 타이포 - 부럽지가 않어 -->
+            <article class="motion-card">
+              <div class="motion-thumb">
+                <video
+                  src="assets/media/kineticTypography.mp4"
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span class="play"></span>
+              </div>
+              <div class="motion-meta">
+                <strong>장기하 - 부럽지가 않어</strong>
+                <span>Kinetic Typography</span>
+              </div>
+            </article>
+
+            <!-- 킹스맨 -->
+            <article class="motion-card">
+              <div class="motion-thumb">
+                <video
+                  src="assets/media/kingsman.mp4"
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span class="play"></span>
+              </div>
+              <div class="motion-meta">
+                <strong>kingsman</strong>
+                <span>Cinematic Edit</span>
+              </div>
+            </article>
+
+            <!-- 인트로 모션 -->
+            <article class="motion-card">
+              <div class="motion-thumb">
+                <video
+                  src="assets/media/intro.mp4"
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span class="play"></span>
+              </div>
+              <div class="motion-meta">
+                <strong>인트로</strong>
+                <span>Intro Motion</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESIGN 이벤트페이지, 배너 -->
+      <section class="section design" id="design">
+        <div class="section-inner section-grid reveal">
+          <div>
+            <span class="section-num">03</span>
+            <h2 class="section-title">Design</h2>
+            <p class="tool-line">Event page &#183; Banner</p>
+            <p class="section-desc">
+              이벤트 페이지의 정보 구조와 비주얼 임팩트를 설계하여 프로모션의
+              흐름을 명확하게 전달합니다.
+            </p>
+            <a href="#modal-design" class="view-btn">View Project</a>
+          </div>
+
+          <div class="design-preview glass">
+            <a href="#modal-design" class="design-main-card">
+              <span class="design-label">Event Page</span>
+              <img
+                src="assets/images/eurotruck-logitech.jpg"
+                alt="Euro Truck Logitech event page design"
+              />
+              <div class="design-card-text">
+                <strong>Euro Truck × Logitech</strong>
+                <span>Promotion Detail Page</span>
+              </div>
+            </a>
+
+            <div class="design-banner-stack">
+              <a href="#modal-design" class="design-banner-card">
+                <span class="design-label">Banner 01</span>
+                <img
+                  src="assets/images/banner01.jpg"
+                  alt="Double Cheese Bulgogi Bake banner"
+                />
+              </a>
+
+              <a href="#modal-design" class="design-banner-card">
+                <span class="design-label">Banner 02</span>
+                <img
+                  src="assets/images/banner02.jpg"
+                  alt="Cup Oatmeal banner"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NFNL -->
+      <section class="section nfnl" id="nfnl">
+        <div class="section-inner section-grid reveal">
+          <div>
+            <span class="section-num">04</span>
+            <h2 class="section-title">Web</h2>
+            <p class="tool-line">
+              Branding &#183; Web Design &#183; Publishing &#183; Motion &#183;
+              Editing
+            </p>
+            <p class="section-desc">
+              브랜드 아이덴티티 구축부터 웹사이트, 퍼블리싱, 모션까지 통합적으로
+              디자인한 최신 대표 프로젝트입니다.
+            </p>
+            <a href="#modal-web" class="view-btn">View Project</a>
+          </div>
+
+          <!-- Web NFNL 미리보기 -->
+          <a
+            href="#modal-web"
+            class="nfnl-showcase nfnl-mockup"
+            aria-label="NFNL project modal open"
+          >
+            <img
+              src="assets/images/nfnl-mockup.png"
+              alt="NFNL responsive website mockup"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- LIGHTBOX / MODAL 라이트박스 (모달) -->
+    <div class="lb-overlay" id="modal-about">
+      <a href="#about" class="lb-bg" aria-label="close modal"></a>
+
+      <div class="lb-box">
+        <a href="#about" class="lb-close">×</a>
+
+        <div class="lb-head">
+          <span>About Me</span>
+          <h2>Resume</h2>
+          <p>
+            정답을 찾는 사람이 아니라, 더 나은 방향을 만드는 사람. <br />
+            작은 불편함을 지나치지 않고, 보는 사람의 시선과 감정의 흐름을 살피며
+            더 자연스럽고 오래 남는 경험을 만들어갑니다.
+          </p>
+        </div>
+
+        <div class="resume-grid">
+          <div>
+            <h3>Profile</h3>
+            <p>이다겸 &#183; 1998.08.04</p>
+            <p>반려견전문가능력시험 <span>(주)바우라움 </span></p>
+            <p>2종보통 운전면허증 <span>서울시경찰청 </span></p>
+          </div>
+
+          <div>
+            <h3>Training</h3>
+            <p>
+              - 반려동물 전문인력 양성과정
+              <span>(주)바우라움 &#183; 24.07 &#8210; 24.08</span>
+            </p>
+            <p>
+              - 생성형 AI를 활용한 영상 웹퍼블리셔&프론트엔드(React) <br />
+              &#160; 개발자 양성
+              <span>MBC컴퓨터아카데미 &#183; 25.12 &#8210; 26.05</span>
+            </p>
+          </div>
+
+          <div>
+            <h3>Tools</h3>
+            <div class="tools_icons">
+              <!-- 프로그램 아이콘들 -->
+              <img src="assets/icon/Photoshop.png" alt="포토샵" />
+              <img src="assets/icon/Illustrator.png" alt="일러스트레이터" />
+              <img src="assets/icon/Premiere.png" alt="프리미어" />
+              <img src="assets/icon/Aftereffect.png" alt="에프터 이펙트" />
+              <img src="assets/icon/Figma.png" alt="피그마" />
+              <img src="assets/icon/HTML.png" alt="HTML" />
+              <img src="assets/icon/css.png" alt="CSS" />
+              <img src="assets/icon/js.png" alt="JavaScript" />
+            </div>
+          </div>
+
+          <div>
+            <h3>Strength</h3>
+            <p>
+              작은 아이디어도 그냥 흘려보내지 않고 더 나은 가능성으로 확장하며,
+              다양한 관점에서 결과물의 완성도를 높이는 과정을 좋아합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lb-overlay" id="modal-artwork">
+      <a href="#artwork" class="lb-bg" aria-label="close modal"></a>
+
+      <div class="lb-box">
+        <a href="#artwork" class="lb-close">×</a>
+
+        <div class="lb-head">
+          <span>Artwork</span>
+          <h2>Vector Artwork</h2>
+          <p>
+            펜툴을 활용해 제작한 벡터 기반 아트워크입니다. 컬러 버전과 라인
+            버전을 함께 구성했습니다.
+          </p>
+        </div>
+
+        <div class="lb-images two">
+          <figure>
+            <img
+              src="assets/images/denji-artwork-color.png"
+              alt="Colored Artwork"
+            />
+            <figcaption>Colored Artwork</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="assets/images/denji-artwork-line.png"
+              alt="Line Artwork"
+            />
+            <figcaption>Line Artwork</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="lb-overlay" id="modal-motion">
+      <a href="#motion" class="lb-bg" aria-label="close modal"></a>
+
+      <div class="lb-box">
+        <a href="#motion" class="lb-close">×</a>
+
+        <div class="lb-head">
+          <span>Motion</span>
+          <h2>Motion Design & Editing</h2>
+          <p>
+            영상의 분위기와 속도감을 고려해 컷 편집, 타이포 모션, 전환 효과를
+            설계했습니다.
+          </p>
+        </div>
+
+        <div class="motion-modal motion-gallery">
+          <div class="motion-info">
+            <span class="motion-count">01 / 06</span>
+            <h3 class="motion-current-title">NFNL intro</h3>
+
+            <div class="motion-current-text">
+              <h4>Concept</h4>
+              <p class="motion-current-concept">
+                망원경을 통해 목표물을 추적하듯 음식을 찾아가는 시선 흐름을
+                구성하고, 음식을 발견한 뒤 허기가 위험 신호처럼 고조되는 순간을
+                워닝 이펙트로 표현한 인트로 영상입니다.
+              </p>
+
+              <h4>Role</h4>
+              <p class="motion-current-role">기획 / 편집 / 연출</p>
+
+              <h4>Tools</h4>
+              <p class="motion-current-tools">Premiere Pro, After Effects</p>
+            </div>
+          </div>
+
+          <div class="motion-viewer">
+            <video class="motion-main-video" controls playsinline>
+              <source src="assets/media/nfnl_video.mp4" type="video/mp4" />
+            </video>
+
+            <div class="motion-thumbs">
+              <button
+                type="button"
+                class="motion-thumb-btn active"
+                data-count="01 / 06"
+                data-video="assets/media/NFNL_Video.mp4"
+                data-title="NFNL intro"
+                data-concept="망원경을 통해 목표물을 추적하듯 음식을 찾아가는 시선 흐름을 구성하고, 음식을 발견한
+                뒤 허기가 위험 신호처럼 고조되는 순간을 워닝 이펙트로 표현한 인트로 영상입니다.
+"
+                data-role="기획 / 편집 / 연출"
+                data-tools="Premiere Pro, After Effects"
+              >
+                <video
+                  src="assets/media/NFNL_Video.mp4"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span>NFNL intro</span>
+              </button>
+
+              <button
+                type="button"
+                class="motion-thumb-btn"
+                data-count="02 / 06"
+                data-video="assets/media/daiso.mp4"
+                data-title="본셉 광고"
+                data-concept="제품의 산뜻한 이미지를 살리기 위해 밝은 컬러와 빠른 컷 편집을 중심으로 구성한 광고 영상입니다."
+                data-role="영상 촬영 / 파트 편집 / 연출 / 총괄 디렉팅"
+                data-tools="Premiere Pro, After Effects"
+              >
+                <video
+                  src="assets/media/daiso.mp4"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span>본셉 광고</span>
+              </button>
+
+              <button
+                type="button"
+                class="motion-thumb-btn"
+                data-count="03 / 06"
+                data-video="assets/media/kineticTypography_nightmare.mp4"
+                data-title="애쉬 아일랜드 - 악몽"
+                data-concept="어두운 분위기와 감정선을 살리기 위해 타이포의 등장 타이밍과 화면 전환을 조절한 키네틱 타이포그래피 작업입니다."
+                data-role="Kinetic Typography / Editing "
+                data-tools="After Effects"
+              >
+                <video
+                  src="assets/media/kineticTypography_nightmare.mp4"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span>악몽</span>
+              </button>
+
+              <button
+                type="button"
+                class="motion-thumb-btn"
+                data-count="04 / 06"
+                data-video="assets/media/kineticTypography.mp4"
+                data-title="장기하 - 부럽지가 않어"
+                data-concept="가사의 리듬과 말맛을 시각적으로 살리기 위해 타이포의 속도, 크기, 등장 타이밍을 조절한 영상입니다."
+                data-role="Typography Motion / Editing"
+                data-tools="After Effects"
+              >
+                <video
+                  src="assets/media/kineticTypography.mp4"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span>부럽지가 않어</span>
+              </button>
+
+              <button
+                type="button"
+                class="motion-thumb-btn"
+                data-count="05 / 06"
+                data-video="assets/media/kingsman.mp4"
+                data-title="kingsman"
+                data-concept="시네마틱한 분위기와 긴장감을 살리기 위해 빠른 컷, 전환 효과, 컬러 무드 등을 음악에 맞춰 조합한 편집 영상입니다."
+                data-role="Editing / Transition"
+                data-tools="Premiere Pro"
+              >
+                <video
+                  src="assets/media/kingsman.mp4"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span>kingsman</span>
+              </button>
+
+              <button
+                type="button"
+                class="motion-thumb-btn"
+                data-count="06 / 06"
+                data-video="assets/media/intro.mp4"
+                data-title="인트로"
+                data-concept="짧은 시간 안에 분위기와 이름을 각인시키기 위해 타이포, 속도감, 전환을 중심으로 구성한 인트로 영상입니다."
+                data-role="Intro Motion / Editing / Motion"
+                data-tools="After Effects"
+              >
+                <video
+                  src="assets/media/intro.mp4"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <span>인트로</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lb-overlay" id="modal-design">
+      <a href="#design" class="lb-bg" aria-label="close modal"></a>
+
+      <div class="lb-box design-modal-box">
+        <a href="#design" class="lb-close">×</a>
+
+        <div class="lb-head">
+          <span>Design</span>
+          <h2>Event Page & Banner</h2>
+          <p>
+            긴 이벤트 페이지와 짧은 배너의 목적에 맞춰 정보의 우선순위와 시선
+            흐름을 다르게 구성했습니다.
+          </p>
+        </div>
+
+        <div class="design-modal">
+          <div class="design-modal-info">
+            <span class="design-modal-count">03 / Design</span>
+            <h3>Promotion Visual System</h3>
+
+            <p>
+              이벤트 페이지는 혜택과 상품 정보를 순서대로 읽을 수 있도록
+              구성하고, 배너는 짧은 시간 안에 메뉴와 카피가 먼저 보이도록
+              압축했습니다.
+            </p>
+
+            <dl>
+              <div>
+                <dt>Type</dt>
+                <dd>Event Page / Banner</dd>
+              </div>
+
+              <div>
+                <dt>Point</dt>
+                <dd>Information Flow / Visual Impact / Promotion Mood</dd>
+              </div>
+
+              <div>
+                <dt>Tools</dt>
+                <dd>Photoshop / Illustrator</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="design-slider">
+            <div class="design-slider-head">
+              <p class="design-slide-title">Event Page</p>
+
+              <div class="design-slider-controls">
+                <button
+                  type="button"
+                  class="design-prev"
+                  aria-label="previous design"
+                >
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  class="design-next"
+                  aria-label="next design"
+                >
+                  ›
+                </button>
+              </div>
+            </div>
+
+            <div class="design-slide-viewport">
+              <div class="design-slide-track">
+                <!-- slide 01 이벤트페이지 -->
+                <div class="design-slide">
+                  <figure class="design-event-work">
+                    <div class="design-scroll-frame">
+                      <img
+                        src="assets/images/eurotruck-logitech.jpg"
+                        alt="Euro Truck Logitech event page design"
+                        data-zoom-src="assets/images/eurotruck-logitech.jpg"
+                      />
+                    </div>
+                  </figure>
+                </div>
+
+                <!-- slide 02 배너 2개 -->
+                <div class="design-slide">
+                  <div class="design-banner-works">
+                    <figure>
+                      <img
+                        src="assets/images/banner01.jpg"
+                        alt="Double Cheese Bulgogi Bake banner"
+                        data-zoom-src="assets/images/banner01.jpg"
+                      />
+                    </figure>
+
+                    <figure>
+                      <img
+                        src="assets/images/banner02.jpg"
+                        alt="Cup Oatmeal banner"
+                        data-zoom-src="assets/images/banner02.jpg"
+                      />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="design-dots">
+              <button type="button" class="active" data-design-index="0">
+                Event Page
+              </button>
+              <button type="button" data-design-index="1">Banners</button>
+            </div>
+          </div>
+
+          <!-- 이미지 확대보기 -->
+          <div class="design-zoom" aria-hidden="true">
+            <button type="button" class="design-zoom-close">×</button>
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lb-overlay" id="modal-web">
+      <a href="#nfnl" class="lb-bg" aria-label="close modal"></a>
+
+      <div class="lb-box">
+        <a href="#nfnl" class="lb-close">×</a>
+
+        <div class="lb-head">
+          <span>Web</span>
+          <h2>NFNL — No Food No Life</h2>
+          <p>
+            브랜드 아이덴티티, 웹디자인, 퍼블리싱, 모션, 영상 편집까지
+            통합적으로 제작한 웹 팀프로젝트입니다.
+          </p>
+        </div>
+
+        <div class="project-desc">
+          <h3>Concept</h3>
+          <p>
+            NFNL은 ‘음식이 없으면 살 수 없다’는 콘셉트를 바탕으로, 진짜 맛집을
+            집요하게 추적하는 ‘맛집 킬러’라는 브랜드 캐릭터를 설정하고, 강렬한
+            브랜드 이미지를 웹 사이트로 풀어낸 5인 팀프로젝트입니다.
+          </p>
+
+          <h3>Role</h3>
+          <p>
+            메인 인트로 영상 제작 / 커뮤니티 X파일 파트 / 회사소개 페이지의
+            <b class="blue">UI·퍼블리싱을</b> 담당했습니다.
+            <br />
+            또한 프로젝트 후반에는 팀의 비주얼 방향을 조율하며, ‘맛집 킬러’
+            콘셉트가 더 강하게 드러나도록 <br />
+            브랜드 무드, 인터랙션 디테일, 마우스 포인터 그래픽 등을 보완해 전체
+            완성도를 높였습니다.
+          </p>
+
+          <h3>Point</h3>
+          <p>
+            경고 이펙트, 스크롤 모션, 탭 인터랙션, 영상 연출을 활용해 브랜드의
+            집요하고 강렬한 분위기를 표현했습니다.
+          </p>
+
+          <div class="modal-links">
+            <a href="https://damong2.github.io/NFNL_team/" target="_blank"
+              >Open Site</a
+            >
+            <!-- <a href="https://github.com/너의깃허브주소" target="_blank"
+              >GitHub</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-grid">
+        <div>
+          <h2>Let’s work together</h2>
+          <p>함께 더 나은 경험을 만들어가고 싶습니다.</p>
+        </div>
+        <div>
+          <strong>Email</strong>
+          <a href="mailto:leeda_84@naver.com">leeda_84@naver.com</a>
+        </div>
+        <div>
+          <strong>Instagram</strong>
+          <a href="#">@lee_d.gyeom</a>
+        </div>
+        <div>
+          <strong>Location</strong>
+          <p>Seoul, Republic of Korea</p>
+        </div>
+        <a href="#top" class="top-btn" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- script -->
+    <script src="assets/js/port.js"></script>
+  </body>
+</html>
