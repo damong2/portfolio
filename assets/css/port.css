@@ -632,16 +632,16 @@ main {
 }
 
 .hero-eyebrow {
-  font-size: 0.62rem;
-  letter-spacing: 0.55em;
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
   color: rgba(200, 245, 255, 0.7);
   text-transform: uppercase;
   margin-bottom: 1.7rem;
   animation: fadeUp 1.2s ease 0.2s both;
+  margin-bottom: 28px;
 }
 
 .hero-title {
-  /* font-family: "Cormorant Garamond", serif; */
   font-size: clamp(4.2rem, 8.2vw, 9.8rem);
   line-height: 0.86;
   font-weight: 300;
@@ -662,11 +662,19 @@ main {
 }
 
 .hero-desc {
-  margin-top: 2rem;
-  font-size: 0.78rem;
+  /* margin-top: 2rem;
+  font-size: 0.9rem;
   font-weight: 200;
-  letter-spacing: 0.3em;
-  color: rgba(255, 255, 255, 0.48);
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.48); */
+
+  margin-top: 28px;
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+  color: rgba(230, 246, 255, 0.78);
+
   text-transform: uppercase;
   animation: fadeUp 1.4s ease 0.7s both;
 }
